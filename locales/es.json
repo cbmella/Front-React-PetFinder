@@ -1,0 +1,62 @@
+{
+  "pets": {
+    "title": "Mascotas Adoptables"
+  },
+  "navbar": {
+    "home": "Inicio",
+    "pets": "Mascotas",
+    "lostPet": "Mascota Perdida",
+    "adoption": "Adopción",
+    "login": "Iniciar Sesión",
+    "register": "Registro",
+    "spanish": "Español",
+    "english": "Ingles"
+  },
+  "jumbotron": {
+    "title": "PetFinder, más que un buscador de adopciones",
+    "description": "Encuentra a tu compañero de vida o ayuda a traer la alegría de vuelta a una familia.",
+    "searchLabel": "Suscríbete por correo electrónico",
+    "searchPlaceholder": "Buscar...",
+    "searchButton": "Buscar"
+  },
+  "searchForm": {
+    "name": "Nombre",
+    "namePlaceholder": "Ingrese el nombre",
+    "location": "Ubicación",
+    "locationPlaceholder": "Ingrese la ubicación",
+    "breed": "Raza",
+    "breedPlaceholder": "Ingrese la raza",
+    "age": "Edad",
+    "agePlaceholder": "Ingrese la edad",
+    "personality": "Personalidad",
+    "personalityPlaceholder": "Ingrese la personalidad",
+    "adoptionRequirements": "Requisitos de Adopción",
+    "adoptionRequirementsPlaceholder": "Ingrese los requisitos de adopción",
+    "status": "Estado",
+    "allStatus": "Todos",
+    "lostStatus": "Perdido",
+    "adoptionStatus": "En Adopción"
+  },
+  "paginator": {
+    "go": "Ir",
+    "first": "Primero",
+    "last": "Ultimo",
+    "next": "Siguiente",
+    "prev": "Anterior"
+  },
+  "petList": {
+    "searchAndFilters": "Búsqueda y filtros",
+    "table": {
+      "name": "Nombre",
+      "location": "Ubicación",
+      "status": "Estado",
+      "action": "Acción"
+    }
+  },
+  "carousel": {
+    "ViewDetails": "Ver Detalles"
+  },
+  "footer": {
+    "AllRightsReserved": "Todos los derechos reservados"
+  }
+}

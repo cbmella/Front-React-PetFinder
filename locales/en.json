@@ -1,0 +1,62 @@
+{
+  "pets": {
+    "title": "Adoptable Pets"
+  },
+  "navbar": {
+    "home": "Home",
+    "pets": "Pets",
+    "lostPet": "Lost Pet",
+    "adoption": "Adoption",
+    "login": "Login",
+    "register": "Register",
+    "spanish": "Spanish",
+    "english": "English"
+  },
+  "jumbotron": {
+    "title": "PetFinder more than just a search engine for adoptions",
+    "description": "Find your life partner, or help bring joy back to a family.",
+    "searchLabel": "Email sign-up",
+    "searchPlaceholder": "Search...",
+    "searchButton": "Search"
+  },
+  "searchForm": {
+    "name": "Name",
+    "namePlaceholder": "Enter name",
+    "location": "Location",
+    "locationPlaceholder": "Enter location",
+    "breed": "Breed",
+    "breedPlaceholder": "Enter breed",
+    "age": "Age",
+    "agePlaceholder": "Enter age",
+    "personality": "Personality",
+    "personalityPlaceholder": "Enter personality",
+    "adoptionRequirements": "Adoption Requirements",
+    "adoptionRequirementsPlaceholder": "Enter adoption requirements",
+    "status": "Status",
+    "allStatus": "All",
+    "lostStatus": "Lost",
+    "adoptionStatus": "For Adoption"
+  },
+  "paginator": {
+    "go": "Go",
+    "first": "First",
+    "last": "Last",
+    "next": "Next",
+    "prev": "Prev"
+  },
+  "petList": {
+    "searchAndFilters": "Search and Filters",
+    "table": {
+      "name": "Name",
+      "location": "Location",
+      "status": "Status",
+      "action": "Action"
+    }
+  },
+  "carousel": {
+    "ViewDetails": "View Details"
+  },
+  "footer": {
+    "AllRightsReserved": "All Rights Reserved"
+  }
+}
