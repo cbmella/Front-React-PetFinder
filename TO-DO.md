@@ -1,1 +1,2 @@
 - add select breed components
+- limit the number of buttons to be displayed in select race components and always add at the end a see all that takes you to the search engine with filters
