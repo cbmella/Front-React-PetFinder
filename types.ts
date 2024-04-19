@@ -44,3 +44,13 @@ export interface PaginationButtonsProps {
   searchParams: SearchParams;
   onPageChange: (page: number) => void;
 }
+
+export interface Breed {
+  id: number;
+  name: string;
+}
+
+export interface BreedSelectorProps {
+  onChange: (breedId: string | number) => void;
+  multiple?: boolean;
+}
