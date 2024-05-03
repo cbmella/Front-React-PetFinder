@@ -2,13 +2,8 @@ version: '3'
 services:
   app:
     container_name: pet-finder-frontend
-    build:
-      context: .
-      dockerfile: Dockerfile
-    volumes:
-      - ./:/app
-      - /app/node_modules
+    build: .
+    image: cbm3lla/front-lumen-petfinder-prod:1.0
     ports:
       - "9090:80"
     restart: always
-    command: sh -c "npm run dev -- --host"

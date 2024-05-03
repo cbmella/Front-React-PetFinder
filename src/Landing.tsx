@@ -17,8 +17,11 @@ const Inicio: React.FC = () => {
       <BreedSelector onChange={handleBreedChange} multiple={true} />
       <CardCarousel />
       <FeatureSection />
+      {/* Muestra la raza seleccionada si hay una */}
+      {selectedBreed && <p>Raza seleccionada: {selectedBreed}</p>}
     </div>
   );
+  
 };
 
 export default Inicio;

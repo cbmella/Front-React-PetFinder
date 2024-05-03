@@ -1,18 +1,33 @@
-# Utiliza una imagen de Node.js como base
-FROM node:18-alpine
+# Etapa de construcción para crear los archivos estáticos
+FROM node:18-alpine as build
 
-# Establece el directorio de trabajo dentro del contenedor
+# Establecer el directorio de trabajo en el contenedor
 WORKDIR /app
 
-# Copia los archivos de configuración del proyecto al contenedor
+# Copiar los archivos de configuración del proyecto
 COPY package.json ./
 COPY vite.config.ts ./
 
-# Instala las dependencias del proyecto
+# Instalar dependencias
 RUN npm install
 
-# Expone el puerto 80 para acceder a la aplicación
+# Copiar el resto del código fuente
+COPY . .
+
+# Construir la aplicación para producción
+RUN npm run build
+
+# Etapa de producción con Nginx
+FROM nginx:alpine
+
+# Copiar archivos estáticos desde la etapa de construcción
+COPY --from=build /app/dist /usr/share/nginx/html
+
+# Opcionalmente, puedes añadir tu propia configuración de Nginx
+# COPY nginx.conf /etc/nginx/nginx.conf
+
+# Exponer el puerto 80 para el servicio HTTP
 EXPOSE 80
 
-# Inicia el servidor de desarrollo de Vite cuando se ejecute el contenedor
-CMD ["npm", "run", "dev"]
+# Al ejecutar el contenedor, Nginx se iniciará automáticamente
+CMD ["nginx", "-g", "daemon off;"]
